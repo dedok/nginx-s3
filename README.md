@@ -12,9 +12,8 @@
 # How to run with NGINX w/o compilation:
 
 * Install NGINX and `requires`, here is explanation how: http://nginx.org/en/linux_packages.html
-* Configure conf/aws_utils.js
+* Configure conf/aws_utils.js and conf/s3_proxy.conf
   * Should be replace the value of $secret variable to yours value
-* Configure conf/s3_proxy.conf
   * Should be replace the value of AWS_SECRET_KEY to yours value
   * Should be replace the value of AWS_ACCESS_KEY to yours value
 * Install `requires` Configure /etc/nginx/nginx.conf
