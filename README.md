@@ -16,14 +16,14 @@
   * Should be replace the value of `$secret` variable to yours value
   * Should be replace the value of AWS_SECRET_KEY to yours value
   * Should be replace the value of AWS_ACCESS_KEY to yours value
-* Install `requires` Configure /etc/nginx/nginx.conf
+* Install `requires` and configure /etc/nginx/nginx.conf
   * Add a line to /etc/nginx/nginx.conf: 'load_module modules/ngx_http_js_module.so;'
 * Copy configured conf/aws_utils.js to /etc/nginx/
 * Copy configured conf/s3_proxy.conf to /etc/nginx/conf.d/
 
 * Generate access token using ./script/generate_token.sh
 ```bash
-# Getting {md5 token} also store yours `expires`
+# Getting {md5 token}
 # Notice. --secret should be the same as `$secret` (see the second step)
 $> ./scripts/generate_token.sh --secret=my-secret --bucket=my-s3-bucket --expires=2147483647 # forever
 2RfxcompilationXGk2c4x0NMkMHZZcfA
