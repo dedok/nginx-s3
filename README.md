@@ -39,6 +39,7 @@ $> curl -H"Host: s3_proxy" 'http://localhost:80/{BUCKET}/{KEY}?e=2147483647&t=2R
 $> curl -XPOST -H"Host: s3_proxy" 'http://localhost:80/{BUCKET}/{KEY}?e=2147483647&t=2RfxXGk2c4x0NMkMHZZcfA'
 
 # Getting an access restriction (403):
-$> curl -XPOST -H"Host: s3_proxy" 'http://localhost:80/{BUCKET}/{KEY}?e=2147483647&t=2RfxXGk2c4x0NMkMHZZcfA'
+$> curl -H"Host: s3_proxy" 'http://localhost:80/{BUCKET}/{KEY}?e=2147483647&t=WRONG'
+$> curl -H"Host: s3_proxy" 'http://localhost:80/{BUCKET}/{KEY}?e=WRONG&t=2RfxXGk2c4x0NMkMHZZcfA'
 ```
 
