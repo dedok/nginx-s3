@@ -9,7 +9,7 @@
  * --with-http_ssl_module (built-in)
  * --with-http_secure_link_module (built-in)
 
-# How to run with NGINX w/o compilation:
+# Install & test this (w/o compilation of NGINX
 
 * Install NGINX and `requires`, here is explanation how: http://nginx.org/en/linux_packages.html
 * Configure conf/aws_utils.js and conf/s3_proxy.conf
@@ -26,7 +26,7 @@
 # Getting {md5 token} also store yours `expires`
 # Notice. --secret should be the same as `$secret` (see the second step)
 $> ./scripts/generate_token.sh --secret=my-secret --bucket=my-s3-bucket --expires=2147483647 # forever
-2RfxXGk2c4x0NMkMHZZcfA
+2RfxcompilationXGk2c4x0NMkMHZZcfA
 # Or see usage
 $> ./scripts/generate_token.sh --help
 ```
