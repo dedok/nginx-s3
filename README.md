@@ -13,7 +13,7 @@
 
 * Install NGINX and `requires`, here is explanation how: http://nginx.org/en/linux_packages.html
 * Configure conf/aws_utils.js and conf/s3_proxy.conf
-  * Should be replace the value of $secret variable to yours value
+  * Should be replace the value of `$secret` variable to yours value
   * Should be replace the value of AWS_SECRET_KEY to yours value
   * Should be replace the value of AWS_ACCESS_KEY to yours value
 * Install `requires` Configure /etc/nginx/nginx.conf
@@ -24,6 +24,7 @@
 * Generate access token using ./script/generate_token.sh
 ```bash
 # Getting {md5 token} also store yours `expires`
+# Notice. --secret should be the same as `$secret` (see the second step)
 $> ./scripts/generate_token.sh --secret=my-secret --bucket=my-s3-bucket --expires=2147483647 # forever
 2RfxXGk2c4x0NMkMHZZcfA
 # Or see usage
